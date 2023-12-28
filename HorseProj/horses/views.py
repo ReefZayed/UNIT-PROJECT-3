@@ -48,8 +48,7 @@ def add_services_view(request:HttpRequest,stable_id):
     stable=StableHorses.objects.get(id=stable_id)
     try:
 
-        if request.method=="POST":
-            
+        if request.method=="POST":    
             new_services=ServicesStable(stbleHorse=stable,name_Servic=request.POST["name_Servic"],description_Servic=request.POST["description_Servic"],duration_service=request.POST["duration_service"], price=request.POST["price"])
             new_services.save()
             return redirect("horses:stable_details_view", stable_id=stable.id)

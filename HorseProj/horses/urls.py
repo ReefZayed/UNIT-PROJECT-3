@@ -14,6 +14,5 @@ urlpatterns = [
     path('add/request/<service_id>', views.add_stable_request_view, name="add_stable_request_view"),
     path('myRequest/', views.stable_request_view, name="stable_request_view")
 
-    
 ]
 

@@ -19,7 +19,7 @@ def consultation_views(request:HttpRequest,user_id):
 
 
 def add_consultation_request_view(request:HttpRequest):
-
+            
     consultation=consultation.objects.all()
    
 

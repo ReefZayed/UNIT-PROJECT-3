@@ -49,7 +49,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{% url 'horses:home_stable_view' %}">Horses stables</a></li>
                   {% if request.user.is_staff %}
-                  <li><a class="dropdown-item" href="{% url 'horses:add_stable_views' %}">Add Stable</a></li>
+                  <li><a class="dropdown-item" href="{% url 'horses:add_stable_views' %}"> Add Stable</a></li>
                   {%endif%}
                   
                 </ul>
